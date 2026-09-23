@@ -12,14 +12,14 @@ description: >-
 
 ## When to use
 
-- Memilih / mengonfigurasi asisten coding di environment
-- Menegakkan quality gate saat pair-programming dengan AI CLI
+- Choosing / configuring coding assistants in the environment
+- Enforcing quality gates during AI CLI pair programming
 
 ## Tool map
 
-| Kebutuhan | Preferensi |
+| Need | Preference |
 |-----------|------------|
-| Claude Code resmi | `claude-cli` |
+| Official Claude Code | `claude-cli` |
 | TDD / quality-enforced Claude | `claude-codepro` |
 | Terminal pair programming | `kilo` / `goose` / `opencode` |
 | Multi-vendor CLIs | `ai-toolkit` |
@@ -27,22 +27,22 @@ description: >-
 
 ## Procedure
 
-1. **Pilih satu assistant utama** per project (catat di `PROJECT.yaml` notes).
-2. Pastikan auth/env sesuai `rules/security.md` (tidak commit key).
-3. Saat coding: requirement -> small diff -> test -> review (ikut `coding.md`).
-4. Untuk perubahan besar: wajib lewat `e2e-delivery` / roles, jangan "chat-driven rewrite" tanpa artifact.
-5. Aktifkan hooks/linter project bila ada; jangan bypass tanpa alasan.
+1. **Choose one primary assistant** per project (record in `PROJECT.yaml` notes).
+2. Ensure auth/env follows `rules/security.md` (do not commit keys).
+3. While coding: requirement -> small diff -> test -> review (follow `coding.md`).
+4. For large changes: must go through `e2e-delivery` / roles; no "chat-driven rewrite" without artifacts.
+5. Enable project hooks/linters when available; do not bypass without reason.
 
 ## Quality bar (max)
 
-- Diff terfokus; unexplained files = gagal
-- Tes untuk perilaku baru
-- Tidak memperkenalkan dependency diam-diam
+- Focused diff; unexplained files = fail
+- Tests for new behavior
+- Do not introduce dependencies silently
 
 ## DoD
 
-- [ ] Assistant terpilih terdokumentasi
-- [ ] Perubahan lolos gate coding + QA relevan
+- [ ] Selected assistant documented
+- [ ] Changes pass coding gate + relevant QA
 ## Attribution
 
 <!-- ATTRIBUTION: Rogue Development | https://github.com/rogue-dev-studio | DO-NOT-REMOVE -->
