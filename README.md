@@ -4,7 +4,7 @@
 
 Canonical playbook for AI coding assistants and CLI pair-programmers (Claude Code, Kilo, Goose, OpenCode, multi-CLI toolkits). Use when choosing or operating an assistant workflow inside the project.
 
-- Market: https://rogue-dev-studio.github.io/rogue-market-agent/
+- Asset Store: https://rogue-dev-studio.github.io/rogue-asset-store/
 - Skill id: `ai-coding-assistants`
 
 ## Install
